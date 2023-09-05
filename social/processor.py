@@ -1,4 +1,8 @@
+from .models import Social
 
 def context(request):
-    dict={'test':'hola 4to sistemas'}
+    dict={}
+    listSocial=Social.objects.all()
+    for social in listSocial:
+        dict[social.key]=social.url
     return dict
