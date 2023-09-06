@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'blog',
     'social',
     'pages',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -146,3 +147,9 @@ CKEDITOR_CONFIGS = {
     } 
 
 } 
+
+# Email configure
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = 'b337dc5ba6341a'
+EMAIL_HOST_PASSWORD = '78dd8de11f8d5d'
+EMAIL_PORT = '2525'
